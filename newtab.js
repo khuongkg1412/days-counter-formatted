@@ -44,8 +44,8 @@ if (IsFA) {
     const { years, months, weeks, days } = detailedDifference;
 
     outputElement.textContent =
-        `${years} year${years !== 1 ? 's' : ''}, ` +
-        `${months} month${months !== 1 ? 's' : ''}, ` +
-        `${weeks} week${weeks !== 1 ? 's' : ''}, ` +
-        `${days} day${days !== 1 ? 's' : ''}`;
+        `${years} year${years > 1 ? 's' : ''}, ` +
+        `${months} month${months > 1 ? 's' : ''}, ` +
+        `${weeks} week${weeks > 1 ? 's' : ''}, ` +
+        `${days} day${days > 1 ? 's' : ''}`;
 }
